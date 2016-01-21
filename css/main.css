@@ -1,0 +1,405 @@
+/**************************************** 
+****************** GRID/BASE ******************
+****************************************/
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.container:after, .row:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.row {
+	clear: both;
+}
+
+.smallpad {
+	padding: 20px;
+}
+
+.pad {
+	padding: 100px 0;
+}
+
+.topspace {
+	padding-top: 80px;
+}
+
+.padtop {
+	padding-top: 100px;
+}
+
+.extrapad {
+	padding: 200px 0;
+}
+
+.one, .two, .three, .four, .oneFifth, .twoFifth, .threeNav, .twoNav {
+	padding: 10px;
+	float: left;
+}
+
+.one {
+	width: 25%;
+}
+
+.twoNav {
+	width: 40%;
+}
+
+.two {
+	width: 50%;
+}
+
+.three {
+	max-width: 75%;
+}
+
+.threeNav {
+	max-width: 60%;
+}
+
+.four {
+	width: 100%;
+}
+
+.oneFifth {
+	width: 20%;
+}
+
+.twoFifth {
+	width: 40%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.responsive {
+	width: 100%;
+}
+
+/**************************************** 
+****************** POSITIONING ******************
+****************************************/
+.centertext {
+	text-align: center;
+}
+
+.centerother {
+	display: block;
+	margin: 0 auto;
+}
+
+/****************************************
+****************** BACKGROUNDS ******************
+****************************************/
+#contact {
+	background: linear-gradient(to bottom, white, rgba(255,255,255,0.6)),url('../img/map.png'),
+}
+
+#quote {
+	background: #29ABE2 url('../img/quote.jpg') no-repeat 20% 70%;
+}
+
+.blue {
+	background: #29ABE2;
+}
+
+/****************************************
+****************** NAVIGATION ******************
+****************************************/
+#navifix {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: white;
+	border-bottom: 1px solid #29ABE2;
+	z-index: 5;
+	box-shadow: #ccc 0px 0px 10px 0px;
+}
+
+#navi li {
+	display: inline;
+}
+
+#navi li a {
+	text-decoration: none;
+	color: #CCCCCC;
+	margin-left: 15px;
+}
+
+#navi li a.active {
+	border-bottom: 3px solid #29ABE2;
+	color: #29ABE2;
+}
+
+#navi li a:hover {
+	color: #29ABE2;
+}
+
+/****************************************
+****************** TEXT ******************
+****************************************/
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1.6;
+	margin-top: 80px;
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	display: block;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+h5 {
+	color: white;
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+}
+
+h6 {
+	float: left;
+	display: inline-block;
+	color: black;
+	display: inline-block;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+p {
+	font-size: 16px;
+	color: #CCCCCC;
+}
+
+/****************************************
+****************** COLORS ******************
+****************************************/
+.white {
+	color: white;
+}
+
+.bluetext {
+	color: #29ABE2;
+	border: 1px solid #29ABE2;
+	display: inline;
+	padding: 5px;
+}
+/****************************************
+****************** STYLE ******************
+****************************************/
+#name {
+	border: 1px solid #29ABE2;
+	color: #29ABE2;
+	display: inline;
+	padding: 6px;
+}
+
+#navPlus {
+	border: 1px solid #CCC;
+	color: #CCC;
+	display: inline;
+	padding: 6px 10px;
+	display: none;
+}
+
+#navPlus:hover {
+	color: #29ABE2;
+	border: 1px solid #29ABE2;
+}
+
+#navi {
+	padding: 20px 0;
+}
+
+#quote {
+	font-size: 48px;
+	text-shadow: rgba(0,0,0,0.5) 0px 0px 10px;
+}
+
+#skills li img {
+	margin-bottom: 15px;
+}
+
+.social img {
+	float: left;
+	margin-top: -5px;
+	margin-right: 2px;
+}
+
+#services img {
+	margin-bottom: 20px;
+}
+
+
+#me {
+	height: 100px;
+	margin-right: 20px;
+	width: 100px;
+}
+
+.social {
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
+
+.textpadtop {
+	margin-top: 20px;
+}
+
+.thumbnail img {
+	border: 1px solid white;
+}
+
+#port li {
+	display: inline;
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid white;
+	padding: 5px;
+	margin-right: -2px;
+}
+
+ul#port {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#message {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	height: 105px;
+	text-align: top;
+}
+
+#topForm {
+	display: block;
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+input[type=text], textarea {
+	display: block;
+	padding: 5px;
+	width: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+	resize: none;
+	margin-bottom: 20px;
+	color: #29ABE2;
+	border: 1px solid  #29ABE2;
+}
+
+input#submit {
+	display: block;
+	margin: 0 auto;
+	background:  #29ABE2;
+	border: none;
+	padding: 10px;
+	color: white;
+}
+
+.space {
+	margin-top: 50px;
+}
+
+.down {
+	margin-bottom: 50px;
+}
+
+#quote {
+	font-weight: bold;
+}
+
+#dropDown {
+	margin-top: 5px;
+	width: 182px;
+	margin: 0 auto;
+	display: none;
+}
+
+#dropDown li:hover {
+	border: 1px solid #29ABE2;
+}
+
+#dropDown li {
+	display: block;
+	text-align: center;
+	border: 1px solid #ccc;
+	margin-top: 1px;
+}
+
+#dropDown li a {
+	width: 183px;
+	padding: 4px 40px;
+}
+
+@media (max-width: 700px) {
+	.one {
+		width: 50%;
+	}
+	.two {
+		width: 100%;
+	}
+	.split {
+		width: 100%;
+		margin-top: 50px;
+	}
+	.responsiveSmall {
+		width: 100%;
+	}
+	.responsiveCenter {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+}
+
+@media (max-width: 650px) {
+	.twoNav {
+		width: 100%;
+		padding: 3px 20px;
+		text-align: center;
+	}
+	#name {
+		float: left;
+	}
+	.threeNav {
+		display: none;
+	}
+	#navPlus {
+		display: initial;
+		display: inline-block;
+	}
+}
+
+@media (max-width: 500px) {
+	.one {
+		width: 100%;
+	}
+	.thumbnail {
+		width: 50%;
+	}
+}
